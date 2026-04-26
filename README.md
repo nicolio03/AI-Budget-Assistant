@@ -30,3 +30,41 @@ Users can define expenses, upload bank statements, review transactions, and auto
 ---
 
 ## Project Structure
+Screen.py # UI and application flow
+BudgetAgent.py # AI learning logic
+BudgetProfile.py # Budget data model
+Expense.py # Expense model
+User.py # User model
+UserManager.py # Authentication and storage
+
+---
+
+## How It Works
+
+1. User creates a budget with income and expense categories  
+2. User uploads a bank statement  
+3. Transactions are extracted and displayed  
+4. User assigns categories to each transaction  
+5. The system learns from these assignments  
+6. Budget allocations are adjusted based on actual usage  
+
+---
+
+## Setup
+
+### Clone the repository
+git clone https://github.com/nicolio03/AI-Budget-Assistant.git
+
+cd AI-Budget-Assistant
+
+### Install dependencies
+pip install ipywidgets pypdf
+
+### Run the application
+```python
+from Screen import show_start_screen
+import ipywidgets as widgets
+
+app = widgets.VBox()
+show_start_screen(app)
+app
