@@ -62,9 +62,7 @@ pip install ipywidgets pypdf
 
 ### Run the application
 ```python
-from Screen import show_start_screen
+from Screen import start_screen
 import ipywidgets as widgets
 
-app = widgets.VBox()
-show_start_screen(app)
-app
+start_screen()
